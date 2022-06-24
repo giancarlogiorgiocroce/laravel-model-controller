@@ -1,1 +1,50 @@
-//
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    min-height: 100px;
+    background-color: rgb(39, 90, 163);
+    display: flex;
+
+    ul{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li{
+            margin: 0 20px;
+            &:hover{
+                filter: drop-shadow(0 0 10px orange);
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: orange;
+        }
+    }
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    ul{
+        min-width: 200px;
+        display: inline;
+        text-align: center;
+        margin: 20px 0;
+        padding: 10px;
+        list-style: none;
+        text-decoration: none;
+
+        border: 10px solid rgb(39, 90, 163);
+        border-radius: 30px;
+    }
+}
